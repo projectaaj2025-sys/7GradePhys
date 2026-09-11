@@ -1,0 +1,60 @@
+{
+  "name": "physics-quest",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Физика-Квест: Энергетический Щит — образовательная RPG по физике 7 класса (RU/EN/KK). Один HTML-файл, работает офлайн.",
+  "license": "CC-BY-NC-SA-4.0",
+  "author": "Physics Quest Project",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs 8080",
+    "serve": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "stats": "node scripts/stats.mjs",
+    "schema": "node scripts/stats.mjs --schema",
+    "pdfs": "node scripts/extract-pdfs.mjs",
+    "links": "node scripts/list-links.mjs",
+    "verify": "npm run check && npm run smoke && npm run pdfs && npm run links",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "keywords": [
+    "физика",
+    "7 класс",
+    "образование",
+    "игра",
+    "rpg",
+    "геймификация",
+    "учебник",
+    "закирова",
+    "қазақша",
+    "physics",
+    "game-based learning",
+    "single-file",
+    "offline",
+    "github pages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USERNAME/physics-quest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/USERNAME/physics-quest/issues"
+  },
+  "homepage": "https://USERNAME.github.io/physics-quest/",
+  "files": [
+    "index.html",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "NOTICE",
+    "assets",
+    "docs",
+    "scripts"
+  ],
+  "devDependencies": {
+    "jsdom": "^24"
+  }
+}

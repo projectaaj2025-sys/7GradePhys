@@ -1,0 +1,25 @@
+# Нормализуем переводы строк: в репозитории — LF,checkout — как удобно ОС
+* text=auto eol=lf
+
+*.html text eol=lf diff=html
+*.mjs  text eol=lf
+*.js   text eol=lf
+*.css  text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.svg  text eol=lf
+*.json text eol=lf
+
+# PDF и картинки — бинарники: не «диффать» и не перекодировать
+*.pdf     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.woff    binary
+*.woff2   binary
+
+# Сгенерированные файлы: не портить статистику языков и шум в диффах
+docs/SOURCES.md  linguist-generated=true
+assets/pdf/**    linguist-generated=true

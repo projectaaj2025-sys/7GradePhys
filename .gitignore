@@ -1,0 +1,31 @@
+# Зависимости и сборка (в этом проекте их нет, но на будущее)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Локальные артефакты
+*.log
+npm-debug.log*
+.cache/
+.tmp/
+tmp/
+dist/
+public/
+_site/
+
+# Редакторы / ОС
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+*.sublime-project
+*.sublime-workspace
+
+# Локальные выгрузки: файл игры, скачанный из репозитория, и черновики
+/backups/
+/scratch/
+*.backup.html
+*.orig
+*.rej
